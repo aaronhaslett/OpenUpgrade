@@ -1,74 +1,29 @@
 ---Models in module 'website'---
-model theme.ir.attachment (moved from website_theme_install)
-model theme.ir.ui.view (moved from website_theme_install)
-model theme.utils (moved from website_theme_install) [abstract]
-model theme.website.menu (moved from website_theme_install)
-model theme.website.page (moved from website_theme_install)
 new model website.cover_properties.mixin [abstract]
 new model website.robots [transient]
 new model website.snippet.filter
 ---Fields in module 'website'---
-website      / ir.attachment            / theme_template_id (many2one)  : previously in module website_theme_install
-website      / ir.module.module         / image_ids (one2many)          : previously in module website_theme_install
-website      / ir.module.module         / is_installed_on_current_website (boolean): previously in module website_theme_install
 website      / ir.ui.view               / customize_show (boolean)      : module is now 'portal' ('website')
 website      / ir.ui.view               / seo_name (char)               : NEW
-website      / ir.ui.view               / theme_template_id (many2one)  : previously in module website_theme_install
 website      / ir.ui.view               / visibility (selection)        : NEW selection_keys: ['', 'connected', 'password', 'restricted_group'], hasdefault
 website      / ir.ui.view               / visibility_password (char)    : NEW
 website      / mrp.document             / key (char)                    : module is now 'mrp' ('website')
 website      / mrp.document             / website_id (many2one)         : module is now 'mrp' ('website')
 website      / mrp.document             / website_url (char)            : module is now 'mrp' ('website')
-website      / res.company              / website_theme_onboarding_done (boolean): previously in module website_theme_install
 website      / res.partner              / visitor_ids (many2many)       : table is now 'False' ('website_visitor_partner_rel')
 website      / res.partner              / visitor_ids (many2many)       : type is now 'one2many' ('many2many')
 website      / res.users                / visitor_ids (many2many)       : type is now 'one2many' ('many2many')
-website      / theme.ir.attachment      / __last_update (datetime)      : previously in module website_theme_install
-website      / theme.ir.attachment      / copy_ids (one2many)           : previously in module website_theme_install
-website      / theme.ir.attachment      / display_name (char)           : previously in module website_theme_install
-website      / theme.ir.attachment      / key (char)                    : previously in module website_theme_install
-website      / theme.ir.attachment      / name (char)                   : previously in module website_theme_install
-website      / theme.ir.attachment      / url (char)                    : previously in module website_theme_install
-website      / theme.ir.ui.view         / __last_update (datetime)      : previously in module website_theme_install
-website      / theme.ir.ui.view         / active (boolean)              : previously in module website_theme_install
-website      / theme.ir.ui.view         / arch (text)                   : previously in module website_theme_install
-website      / theme.ir.ui.view         / arch_fs (char)                : previously in module website_theme_install
-website      / theme.ir.ui.view         / copy_ids (one2many)           : previously in module website_theme_install
 website      / theme.ir.ui.view         / customize_show (boolean)      : NEW
-website      / theme.ir.ui.view         / display_name (char)           : previously in module website_theme_install
-website      / theme.ir.ui.view         / inherit_id (reference)        : previously in module website_theme_install
-website      / theme.ir.ui.view         / key (char)                    : previously in module website_theme_install
-website      / theme.ir.ui.view         / mode (selection)              : previously in module website_theme_install
-website      / theme.ir.ui.view         / name (char)                   : previously in module website_theme_install
-website      / theme.ir.ui.view         / priority (integer)            : previously in module website_theme_install
-website      / theme.ir.ui.view         / type (char)                   : previously in module website_theme_install
-website      / theme.website.menu       / __last_update (datetime)      : previously in module website_theme_install
-website      / theme.website.menu       / copy_ids (one2many)           : previously in module website_theme_install
-website      / theme.website.menu       / display_name (char)           : previously in module website_theme_install
-website      / theme.website.menu       / name (char)                   : previously in module website_theme_install
-website      / theme.website.menu       / new_window (boolean)          : previously in module website_theme_install
-website      / theme.website.menu       / page_id (many2one)            : previously in module website_theme_install
-website      / theme.website.menu       / parent_id (many2one)          : previously in module website_theme_install
-website      / theme.website.menu       / sequence (integer)            : previously in module website_theme_install
-website      / theme.website.menu       / url (char)                    : previously in module website_theme_install
-website      / theme.website.page       / __last_update (datetime)      : previously in module website_theme_install
-website      / theme.website.page       / copy_ids (one2many)           : previously in module website_theme_install
-website      / theme.website.page       / display_name (char)           : previously in module website_theme_install
-website      / theme.website.page       / url (char)                    : previously in module website_theme_install
-website      / theme.website.page       / view_id (many2one)            : previously in module website_theme_install
-website      / theme.website.page       / website_indexed (boolean)     : previously in module website_theme_install
 website      / website                  / cookies_bar (boolean)         : NEW
 website      / website                  / custom_code_footer (text)     : NEW
 website      / website                  / custom_code_head (text)       : NEW
 website      / website                  / google_search_console (char)  : NEW
 website      / website                  / has_social_default_image (boolean): NEW isfunction: function, stored
 website      / website                  / robots_txt (text)             : NEW
-website      / website.menu             / theme_template_id (many2one)  : previously in module website_theme_install
 website      / website.page             / cache_key_expr (char)         : NEW
 website      / website.page             / cache_time (integer)          : NEW hasdefault
 website      / website.page             / footer_visible (boolean)      : NEW hasdefault
 website      / website.page             / header_visible (boolean)      : NEW hasdefault
-website      / website.page             / theme_template_id (many2one)  : previously in module website_theme_install
 website      / website.snippet.filter   / action_server_id (many2one)   : NEW relation: ir.actions.server
 website      / website.snippet.filter   / field_names (char)            : NEW required
 website      / website.snippet.filter   / filter_id (many2one)          : NEW relation: ir.filters
@@ -77,15 +32,18 @@ website      / website.snippet.filter   / limit (integer)               : NEW re
 website      / website.snippet.filter   / name (char)                   : NEW required
 website      / website.snippet.filter   / website_id (many2one)         : NEW relation: website, required
 website      / website.visitor          / country_flag (binary)         : type is now 'char' ('binary')
+website_theme_install / mrp.document             / theme_template_id (many2one)  : module is now 'mrp' ('website_theme_install')
 ---XML records in module 'website'---
 NEW digest.tip: website.digest_tip_website_0
 NEW digest.tip: website.digest_tip_website_1
 NEW digest.tip: website.digest_tip_website_2
 NEW ir.actions.act_url: website.action_website_edit (noupdate)
 NEW ir.actions.act_url: website.theme_install_act_url
-NEW ir.actions.act_window: base.open_module_tree [potentially moved from website_theme_install module]
 NEW ir.actions.act_window: website.theme_install_kanban_action [renamed from website_theme_install module]
+DEL ir.actions.act_window: website_theme_install.theme_install_kanban_action [renamed to website module]
+DEL ir.actions.server: website_theme_install.theme_install_todo_action
 NEW ir.actions.todo: website.theme_install_todo [renamed from website_theme_install module]
+DEL ir.actions.todo: website_theme_install.theme_install_todo [renamed to website module]
 NEW ir.attachment: website.header_image_1_default_image (noupdate)
 NEW ir.attachment: website.library_image_18 (noupdate)
 NEW ir.attachment: website.s_blockquote_cover_default_image (noupdate)
@@ -120,6 +78,10 @@ NEW ir.model.access: website.access_website_visitor_system
 DEL ir.model.access: website.access_seo_manager
 DEL ir.model.access: website.access_website
 DEL ir.model.access: website.access_website_ir_ui_view
+DEL ir.model.access: website_theme_install.access_theme_ir_attachment [renamed to website module]
+DEL ir.model.access: website_theme_install.access_theme_ir_ui_view [renamed to website module]
+DEL ir.model.access: website_theme_install.access_theme_website_menu [renamed to website module]
+DEL ir.model.access: website_theme_install.access_theme_website_page [renamed to website module]
 NEW ir.rule: website.view_rule_visibility_connected (noupdate)
 NEW ir.rule: website.view_rule_visibility_public (noupdate)
 ir.rule: website.website_designer_edit_qweb (noupdate) (noupdate switched)
@@ -332,5 +294,12 @@ DEL ir.ui.view: website.option_layout_boxed_variables
 DEL ir.ui.view: website.portal_404
 DEL ir.ui.view: website.s_btn
 DEL ir.ui.view: website.theme_customize
+DEL ir.ui.view: website_theme_install.customize_modal
+DEL ir.ui.view: website_theme_install.onboarding_website_theme_step
+DEL ir.ui.view: website_theme_install.res_config_settings_view_form
+DEL ir.ui.view: website_theme_install.theme_view_kanban
+DEL ir.ui.view: website_theme_install.theme_view_search
+DEL ir.ui.view: website_theme_install.view_website_form_view_themes_modal
+DEL ir.ui.view: website_theme_install.website_theme_install_assets
 DEL website.page: website.aboutus_page (noupdate)
 NEW website.snippet.filter: website.dynamic_snippet_data_source_country

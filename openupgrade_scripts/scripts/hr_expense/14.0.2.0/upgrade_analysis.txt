@@ -59,4 +59,5 @@ NEW ir.ui.view: hr_expense.view_hr_expense_sheet_kanban_header
 NEW ir.ui.view: hr_expense.view_hr_expense_sheet_kanban_no_header
 NEW ir.ui.view: hr_expense.view_my_expenses_tree
 DEL ir.ui.view: hr_expense.hr_expense_sheet_register_payment_view_form
+DEL ir.ui.view: hr_expense_check.hr_expense_register_payment_view_form_check_inherit
 NEW product.product: hr_expense.product_product_fixed_cost (noupdate)

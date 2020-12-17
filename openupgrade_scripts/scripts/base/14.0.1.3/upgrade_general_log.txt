@@ -170,42 +170,13 @@ new model website.sale.extra.field [module website_sale]
 new model website.snippet.filter [module website]
 ---Fields in module 'general'---
 # 8721 fields matched,
-# Direct match: 8587
-# Found in other module: 134
+# Direct match: 8647
+# Found in other module: 74
 # Found with different type: 0
 # In obsolete models: 581
 # New columns: 1705
 # Not matched: 908
 ---XML records in module 'general'---
-ERROR: module not in list of installed modules:
----Models in module 'account_analytic_default'---
-model account.analytic.default (moved to account)
----Fields in module 'account_analytic_default'---
-account_analytic_default / account.analytic.default / __last_update (datetime)      : module is now 'account' ('account_analytic_default')
-account_analytic_default / account.analytic.default / account_id (many2one)         : module is now 'account' ('account_analytic_default')
-account_analytic_default / account.analytic.default / analytic_id (many2one)        : module is now 'account' ('account_analytic_default')
-account_analytic_default / account.analytic.default / analytic_tag_ids (many2many)  : module is now 'account' ('account_analytic_default')
-account_analytic_default / account.analytic.default / company_id (many2one)         : module is now 'account' ('account_analytic_default')
-account_analytic_default / account.analytic.default / date_start (date)             : module is now 'account' ('account_analytic_default')
-account_analytic_default / account.analytic.default / date_stop (date)              : module is now 'account' ('account_analytic_default')
-account_analytic_default / account.analytic.default / display_name (char)           : module is now 'account' ('account_analytic_default')
-account_analytic_default / account.analytic.default / partner_id (many2one)         : module is now 'account' ('account_analytic_default')
-account_analytic_default / account.analytic.default / product_id (many2one)         : module is now 'account' ('account_analytic_default')
-account_analytic_default / account.analytic.default / sequence (integer)            : module is now 'account' ('account_analytic_default')
-account_analytic_default / account.analytic.default / user_id (many2one)            : module is now 'account' ('account_analytic_default')
----XML records in module 'account_analytic_default'---
-DEL ir.actions.act_window: account_analytic_default.action_analytic_default_list [renamed to account module]
-DEL ir.actions.act_window: account_analytic_default.action_product_default_list
-DEL ir.actions.act_window: account_analytic_default.analytic_rule_action_user [renamed to account module]
-DEL ir.model.access: account_analytic_default.access_account_analytic_default [renamed to account module]
-DEL ir.model.access: account_analytic_default.access_account_analytic_default_analytic [renamed to account module]
-DEL ir.model.access: account_analytic_default.access_account_analytic_default_invoice [renamed to account module]
-DEL ir.rule: account_analytic_default.analytic_default_comp_rule [renamed to account module] (noupdate)
-DEL ir.ui.menu: account_analytic_default.menu_analytic_default_list [renamed to account module]
-DEL ir.ui.view: account_analytic_default.view_account_analytic_default_form
-DEL ir.ui.view: account_analytic_default.view_account_analytic_default_form_search
-DEL ir.ui.view: account_analytic_default.view_account_analytic_default_kanban
-DEL ir.ui.view: account_analytic_default.view_account_analytic_default_tree
 ERROR: module not in list of installed modules:
 ---Models in module 'account_bank_statement_import'---
 obsolete model account.bank.statement.import [transient]
@@ -219,13 +190,6 @@ DEL ir.ui.view: account_bank_statement_import.account_bank_statement_import_jour
 DEL ir.ui.view: account_bank_statement_import.account_bank_statement_import_view
 DEL ir.ui.view: account_bank_statement_import.assets_backend
 DEL ir.ui.view: account_bank_statement_import.journal_dashboard_view_inherit
-ERROR: module not in list of installed modules:
----Models in module 'account_facturx'---
----Fields in module 'account_facturx'---
----XML records in module 'account_facturx'---
-DEL ir.ui.view: account_facturx.account_invoice_facturx_export
-DEL ir.ui.view: account_facturx.account_invoice_line_facturx_export
-DEL ir.ui.view: account_facturx.account_invoice_partner_facturx_export
 ERROR: module not in list of installed modules:
 ---Models in module 'account_test'---
 obsolete model accounting.assert.test
@@ -274,21 +238,6 @@ DEL ir.ui.view: base_gengo.res_config_settings_view_form
 DEL ir.ui.view: base_gengo.view_ir_translation_inherit_base_gengo_form
 DEL ir.ui.view: base_gengo.view_translation_search
 ERROR: module not in list of installed modules:
----Models in module 'hr_expense_check'---
----Fields in module 'hr_expense_check'---
----XML records in module 'hr_expense_check'---
-DEL ir.ui.view: hr_expense_check.hr_expense_register_payment_view_form_check_inherit
-ERROR: module not in list of installed modules:
----Models in module 'hr_holidays_calendar'---
-model hr.leave.report.calendar (moved to hr_holidays) [sql_view]
----Fields in module 'hr_holidays_calendar'---
----XML records in module 'hr_holidays_calendar'---
-DEL ir.actions.act_window: hr_holidays.action_hr_holidays_dashboard
-DEL ir.model.access: hr_holidays_calendar.access_hr_leave_report_calendar [renamed to hr_holidays module]
-DEL ir.rule: hr_holidays_calendar.hr_leave_report_calendar_rule_multi_company [renamed to hr_holidays module]
-DEL ir.ui.view: hr_holidays_calendar.hr_leave_report_calendar_view
-DEL ir.ui.view: hr_holidays_calendar.hr_leave_report_calendar_view_form
-ERROR: module not in list of installed modules:
 ---Models in module 'im_support'---
 ---Fields in module 'im_support'---
 ---XML records in module 'im_support'---
@@ -304,33 +253,6 @@ payment_test / payment.acquirer         / provider (False)              : select
 ---XML records in module 'payment_test'---
 DEL ir.ui.view: payment_test.test_s2s_form
 DEL payment.acquirer: payment_test.payment_acquirer_test (noupdate)
-ERROR: module not in list of installed modules:
----Models in module 'pos_cash_rounding'---
----Fields in module 'pos_cash_rounding'---
-pos_cash_rounding / account.cash.rounding    / loss_account_id (many2one)    : module is now 'account' ('pos_cash_rounding')
-pos_cash_rounding / account.cash.rounding    / loss_account_id (many2one)    : not stored anymore
-pos_cash_rounding / pos.config               / cash_rounding (boolean)       : module is now 'point_of_sale' ('pos_cash_rounding')
-pos_cash_rounding / pos.config               / only_round_cash_method (boolean): module is now 'point_of_sale' ('pos_cash_rounding')
-pos_cash_rounding / pos.config               / rounding_method (many2one)    : module is now 'point_of_sale' ('pos_cash_rounding')
----XML records in module 'pos_cash_rounding'---
-DEL ir.model.access: pos_cash_rounding.access_account_cash_rounding
-DEL ir.ui.view: pos_cash_rounding.assets
-DEL ir.ui.view: pos_cash_rounding.pos_config_view_form_inherit_cash_rounding
-DEL ir.ui.view: pos_cash_rounding.pos_order_view_form_inherit_cash_rounding
-DEL ir.ui.view: pos_cash_rounding.pos_rounding_form_view_inherited
-DEL ir.ui.view: pos_cash_rounding.res_config_view_form_inherit_pos_cash_rounding
-ERROR: module not in list of installed modules:
----Models in module 'pos_kitchen_printer'---
----Fields in module 'pos_kitchen_printer'---
-pos_kitchen_printer / pos.order                / multiprint_resume (char)      : module is now 'pos_restaurant' ('pos_kitchen_printer')
-pos_kitchen_printer / pos.order.line           / mp_dirty (boolean)            : module is now 'pos_restaurant' ('pos_kitchen_printer')
----XML records in module 'pos_kitchen_printer'---
-ERROR: module not in list of installed modules:
----Models in module 'pos_reprint'---
----Fields in module 'pos_reprint'---
----XML records in module 'pos_reprint'---
-DEL ir.ui.view: pos_reprint.assets
-DEL ir.ui.view: pos_reprint.pos_config_view_form_inherit_pos_reprint
 ERROR: module not in list of installed modules:
 ---Models in module 'test_mail'---
 obsolete model mail.test
@@ -591,81 +513,3 @@ ERROR: module not in list of installed modules:
 ---Fields in module 'website_gengo'---
 ---XML records in module 'website_gengo'---
 DEL ir.ui.view: website_gengo.gengo_assets_editor
-ERROR: module not in list of installed modules:
----Models in module 'website_rating'---
----Fields in module 'website_rating'---
-website_rating / rating.rating            / publisher_comment (text)      : module is now 'portal_rating' ('website_rating')
-website_rating / rating.rating            / publisher_datetime (datetime) : module is now 'portal_rating' ('website_rating')
-website_rating / rating.rating            / publisher_id (many2one)       : module is now 'portal_rating' ('website_rating')
-website_rating / rating.rating            / website_published (boolean)   : DEL
----XML records in module 'website_rating'---
-DEL ir.ui.view: website_rating.assets_frontend
-DEL ir.ui.view: website_rating.message_thread
-DEL ir.ui.view: website_rating.rating_rating_view_form
-DEL ir.ui.view: website_rating.rating_stars_static_popup_composer
-DEL ir.ui.view: website_rating.rating_widget_stars_static
-ERROR: module not in list of installed modules:
----Models in module 'website_theme_install'---
-model theme.ir.attachment (moved to website)
-model theme.ir.ui.view (moved to website)
-model theme.utils (moved to website) [abstract]
-model theme.website.menu (moved to website)
-model theme.website.page (moved to website)
----Fields in module 'website_theme_install'---
-website_theme_install / ir.attachment            / theme_template_id (many2one)  : module is now 'website' ('website_theme_install')
-website_theme_install / ir.module.module         / image_ids (one2many)          : module is now 'website' ('website_theme_install')
-website_theme_install / ir.module.module         / is_installed_on_current_website (boolean): module is now 'website' ('website_theme_install')
-website_theme_install / ir.ui.view               / theme_template_id (many2one)  : module is now 'website' ('website_theme_install')
-website_theme_install / mrp.document             / theme_template_id (many2one)  : module is now 'mrp' ('website_theme_install')
-website_theme_install / res.company              / website_theme_onboarding_done (boolean): module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.attachment      / __last_update (datetime)      : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.attachment      / copy_ids (one2many)           : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.attachment      / display_name (char)           : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.attachment      / key (char)                    : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.attachment      / name (char)                   : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.attachment      / url (char)                    : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / __last_update (datetime)      : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / active (boolean)              : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / arch (text)                   : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / arch_fs (char)                : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / copy_ids (one2many)           : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / display_name (char)           : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / inherit_id (reference)        : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / key (char)                    : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / mode (selection)              : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / name (char)                   : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / priority (integer)            : module is now 'website' ('website_theme_install')
-website_theme_install / theme.ir.ui.view         / type (char)                   : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.menu       / __last_update (datetime)      : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.menu       / copy_ids (one2many)           : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.menu       / display_name (char)           : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.menu       / name (char)                   : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.menu       / new_window (boolean)          : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.menu       / page_id (many2one)            : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.menu       / parent_id (many2one)          : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.menu       / sequence (integer)            : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.menu       / url (char)                    : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.page       / __last_update (datetime)      : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.page       / copy_ids (one2many)           : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.page       / display_name (char)           : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.page       / url (char)                    : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.page       / view_id (many2one)            : module is now 'website' ('website_theme_install')
-website_theme_install / theme.website.page       / website_indexed (boolean)     : module is now 'website' ('website_theme_install')
-website_theme_install / website.menu             / theme_template_id (many2one)  : module is now 'website' ('website_theme_install')
-website_theme_install / website.page             / theme_template_id (many2one)  : module is now 'website' ('website_theme_install')
----XML records in module 'website_theme_install'---
-DEL ir.actions.act_window: base.open_module_tree [potentially moved to website module]
-DEL ir.actions.act_window: website_theme_install.theme_install_kanban_action [renamed to website module]
-DEL ir.actions.server: website_theme_install.theme_install_todo_action
-DEL ir.actions.todo: website_theme_install.theme_install_todo [renamed to website module]
-DEL ir.model.access: website_theme_install.access_theme_ir_attachment [renamed to website module]
-DEL ir.model.access: website_theme_install.access_theme_ir_ui_view [renamed to website module]
-DEL ir.model.access: website_theme_install.access_theme_website_menu [renamed to website module]
-DEL ir.model.access: website_theme_install.access_theme_website_page [renamed to website module]
-DEL ir.ui.view: website_theme_install.customize_modal
-DEL ir.ui.view: website_theme_install.onboarding_website_theme_step
-DEL ir.ui.view: website_theme_install.res_config_settings_view_form
-DEL ir.ui.view: website_theme_install.theme_view_kanban
-DEL ir.ui.view: website_theme_install.theme_view_search
-DEL ir.ui.view: website_theme_install.view_website_form_view_themes_modal
-DEL ir.ui.view: website_theme_install.website_theme_install_assets
